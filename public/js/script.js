@@ -161,7 +161,7 @@ firebase.auth().onAuthStateChanged((user) => {
     // ...
   } else {
     // User is signed out
-    userRoute = `<a href="/auth#signin" id="user"><li class="block hover:text-white px-2 py-1 lg:my-0 my-1 lg:ml-2 font-normal bg-blue rounded" id="authRoute">Login</li></a>`;
+    userRoute = `<a href="/auth#signin" id="user"><li class="block hidden hover:text-white px-2 py-1 lg:my-0 my-1 lg:ml-2 font-normal bg-blue rounded" id="authRoute">Login</li></a>`;
   }
   $("#mob-menu").append(userRoute);
 
